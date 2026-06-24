@@ -1,0 +1,31 @@
+name: Feature
+description: A brand-new capability that does not exist yet.
+title: "[feature] "
+labels: ["feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A **Feature** is new capability.
+
+        Set a **Milestone** before submitting, every issue must target one.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What new capability should exist, and why.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      value: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context

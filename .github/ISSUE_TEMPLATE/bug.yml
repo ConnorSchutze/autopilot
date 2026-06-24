@@ -1,0 +1,40 @@
+name: Bug
+description: Something isn't working as expected.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Set a **Milestone** before submitting, every issue must target one.
+  - type: textarea
+    id: what
+    attributes:
+      label: Bug description
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      render: shell
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
