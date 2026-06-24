@@ -1,0 +1,38 @@
+name: Enhancement
+description: Improve something that already exists.
+title: "[enhancement] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        An **Enhancement** improves existing behavior.
+
+        Set a **Milestone** before submitting, every issue must target one.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What should improve, and why.
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current behavior
+      description: How does it work today?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      value: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
